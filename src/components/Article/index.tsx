@@ -1,4 +1,5 @@
 
+
 import * as S from "./styles.ts";
 export interface ICard {
    title: string
@@ -9,7 +10,7 @@ export interface ICard {
 export const Article = ({ title, subtitle, image_adress }: ICard) => {
    return (
       <S.Article>
-         <div style={{backgroundImage: image_adress}}>
+         <div style={{backgroundImage: `url(${image_adress})`}}>
                <p>{title}</p>
                <p> {subtitle}</p>
          </div>
