@@ -1,7 +1,12 @@
 export const tools = [
     {
-        title: "extesnões",
+        title: "Extensões",
         links: [
+            {
+                name:"WebDeveloper",
+                link_chrome: "",
+                link_firefox:""
+            },
             {
                 name:"Live Server",
                 link_chrome: "",
@@ -11,6 +16,21 @@ export const tools = [
                 name:"Color picker",
                 link_chrome: "",
                 link_firefox:""
+            },
+            {
+                name:"FontsNinja",
+                link_chrome: "",
+                link_firefox:""
+            },
+            {
+                name:"Wappalyzer",
+                link_chrome: "",
+                link_firefox:""
+            },
+            {
+                name:"Windows Resizer",
+                link_chrome: "",
+                link_firefox:""
             }
         ]
     },
@@ -18,7 +38,7 @@ export const tools = [
         title: "Ícones",
         links:[
             {
-                name:"react Icons",
+                name:"React Icons",
                 link:"https://react-icons.github.io/react-icons/"
             },
             {
@@ -57,7 +77,26 @@ export const tools = [
                 link:"https://www.photopea.com/"
             },
             {
-                name:"PineTools"
+                name:"PineTools",
+                link: "https://pinetools.com/"
+            }
+            
+        ]
+    },
+    {
+        title: "Produtividade",
+        links:[
+            {
+                name: "Keep",
+                link:"https://keep.google.com"
+            },
+            {
+                name: "Office",
+                link:"https://www.office.com/"
+            },
+            {
+                name: "EmmetVsCode",
+                link:"https://cibersistemas.pt/tecnologia/como-escrever-html-css-mais-rapido-com-codigos-de-trapaca-emmet-no-codigo-vs/"
             }
         ]
     }

@@ -1,9 +1,17 @@
-export function Header(){
+import * as S from "./styles.ts"
+import logo from "../../assets/InfoHelper.png"
+export function Header() {
     return (
-        <>
-    <a>header</a>
-    <a href="/sobre">sobre</a>
-    <a href="/ferramentas">ferramentas</a>
-    </>
+        <S.Header>
+            <img src={logo} alt="Logo da InfoHelper" />
+            <nav>
+                <ul>
+                    <li><a href="/artigos">Artigos</a></li>
+                    <li><a href="/sobre">sobre</a></li>
+                    <li><a href="/ferramentas">ferramentas</a></li>
+                </ul>
+            </nav>
+
+        </S.Header >
     )
 }
