@@ -6,6 +6,7 @@ export const Section = styled.section`
     align-content:space-evenly;
     flex-wrap:wrap;
     width:80%;
+    max-width: 50rem;
     justify-content:space-evenly;
-    height:40rem;
+    height:45rem;
 `

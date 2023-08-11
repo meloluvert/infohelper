@@ -17,6 +17,8 @@ export const colors = {
   black: "#000",
   white: "#fff"
 }
-export const sizes = {
+{/*variáveis*/}
+export const vars = {
+  time_hover: "0.5s",
   height_card:"15rem"
 }
