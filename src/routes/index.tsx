@@ -6,6 +6,7 @@ export function RouteSoftware() {
   return (
     <Routes>
       <Route path="/" element={<PageLayout />}>
+        <Route path="" element={<PageArticle />} />
         <Route path="artigos" element={<PageArticle />} />
         <Route path="ferramentas" element={<PageTools />} />
         <Route path="sobre" element={<PageAbout />} />

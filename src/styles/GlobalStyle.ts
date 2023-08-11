@@ -8,13 +8,15 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     box-sizing: border-box;
   }
+  
 `
 export const colors = {
-  primary: "",
-  secondary: "",
-  secondaryLight: "",
-  third: "",
-  thirdLight: "",
-  black: "",
-  white: ""
+  primary: "#1B1C1E",
+  secondary: "#393A3B",
+  third: "#78B9EB",
+  black: "#000",
+  white: "#fff"
+}
+export const sizes = {
+  height_card:"15rem"
 }
