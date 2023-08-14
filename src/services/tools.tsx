@@ -4,33 +4,33 @@ export const tools = [
         links: [
             {
                 name:"WebDeveloper",
-                link_chrome: "",
-                link_firefox:""
+                link_chrome: "https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm",
+                link_firefox:"https://addons.mozilla.org/pt-BR/firefox/addon/web-developer/"
             },
             {
                 name:"Live Server",
-                link_chrome: "",
-                link_firefox:""
+                link_chrome: "https://chrome.google.com/webstore/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj",
+                link_firefox:"https://addons.mozilla.org/pt-BR/firefox/addon/live-server-web-extension/"
             },
             {
                 name:"Color picker",
-                link_chrome: "",
-                link_firefox:""
+                link_chrome: "https://chrome.google.com/webstore/detail/snap-color-picker/nbpljhppefmpifoffhhmllmacfdckokh",
+                link_firefox:"https://addons.mozilla.org/pt-BR/firefox/addon/color-picker-webext/"
             },
             {
                 name:"FontsNinja",
-                link_chrome: "",
-                link_firefox:""
+                link_chrome: "https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh",
+                link_firefox:"https://addons.mozilla.org/pt-BR/firefox/addon/fonts-ninja/"
             },
             {
                 name:"Wappalyzer",
-                link_chrome: "",
-                link_firefox:""
+                link_chrome: "https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg",
+                link_firefox:"https://addons.mozilla.org/pt-BR/firefox/addon/wappalyzer/"
             },
             {
                 name:"Windows Resizer",
-                link_chrome: "",
-                link_firefox:""
+                link_chrome: "https://chrome.google.com/webstore/detail/window-resizer/cdhnnifbhmggaaehajmgnofcggobfjkp",
+                link_firefox:"https://addons.mozilla.org/pt-BR/firefox/addon/window-resizer-webextension/"
             }
         ]
     },

@@ -6,9 +6,9 @@ export function Header() {
             <img src={logo} alt="Logo da InfoHelper" />
             <nav>
                 <ul>
-                    <li><a href="/artigos">Artigos</a></li>
-                    <li><a href="/sobre">sobre</a></li>
-                    <li><a href="/ferramentas">ferramentas</a></li>
+                    <li><a href="/artigos">Artigos</a></li> 
+                    <li><a href="/ferramentas">Ferramentas</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
                 </ul>
             </nav>
 

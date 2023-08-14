@@ -1,11 +1,12 @@
 import { ComponentLink } from "../../components";
 import { tools } from "../../services/tools";
+import * as S from "./styles"
 
 export function Tools() {
     return (
-        <>
+        <S.DivGlobal>
             {tools.map(section => (
-                <div>
+                <S.Section>
                     <h3>{section.title}</h3>
                     {section.links.map(link => (
                         <ComponentLink
@@ -17,8 +18,8 @@ export function Tools() {
                             description={link.description}
                         />
                     ))}
-                </div>
+                </S.Section>
             ))}
-        </>
+        </S.DivGlobal>
     );
 }
