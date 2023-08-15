@@ -20,5 +20,6 @@ export const colors = {
 {/*variáveis*/}
 export const vars = {
   time_hover: "0.5s",
-  height_card:"15rem"
+  height_card:"15rem",
+  border_inputs: "5px"
 }
