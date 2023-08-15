@@ -10,8 +10,6 @@ export const Article = styled.article`
     :hover{
         transform: scale(1.01);
     }
-    :hover div{
-    }
     div{
         width:100%;
         height: 100%;
@@ -19,22 +17,35 @@ export const Article = styled.article`
     background-position:center;
     background-size:cover;
     }
+    .blur{
+        display:block;
+        width: 100%;
+        height:100%;
+        position:relative;
+        bottom:0px;
+        backdrop-filter:blur(2px);
+
+        z-index:-1;
+    }
     div .card{
+        z-index:3;
         
         background-color: ${colors.secondary};
         height: 20px;
         text-align: justify;
         position: relative;
-        bottom: calc(20px - ${vars.height_card});
+        bottom: calc(20px - ${vars.height_card} + ${vars.height_card});
         transition:height calc(${vars.time_hover}),bottom ${vars.time_hover};
         overflow-y: scroll;
         overflow: hidden;
-        backdrop-filter: blur(15px);
+    }
+    .card p:nth-child(1){
+        text-transform:uppercase;
     }
     div:hover .card {
         height: calc(5rem + 1px);
-        bottom: calc(4.9rem - ${vars.height_card});
-
+        bottom: calc(4.9rem - ${vars.height_card} + ${vars.height_card});
+        transform: scale(1.01);
     }
     div:hover .card p{
         color: ${colors.white};

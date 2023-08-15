@@ -4,7 +4,7 @@ import * as S from "./styles"
 export function Articles(){
     return (
 <>
-        <h2>Artigos</h2>
+        <h1>Artigos</h1>
     <S.Section>
         {article_json.map( card =>(
 

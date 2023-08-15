@@ -7,8 +7,10 @@ export const Section = styled.section`
     justify-content:center;
     flex-direction:column;
     width:45%;
-    h3{
+    h2{
         color:${colors.white};
+        text-align:left;
+        width:90%;
     }
 `
 export const DivGlobal  = styled.div`
@@ -16,7 +18,7 @@ export const DivGlobal  = styled.div`
     justify-content:space-evenly;
     align-content:space-evenly;
     flex-wrap:wrap;
-    width: 80%;
+    width: 90%;
     height:45rem;
-
+    max-width:120rem
 `

@@ -19,7 +19,7 @@ export const article_json = [
     },
     {
         title: "HTML",
-        subtitle: "não é linguagem de programação?",
+        subtitle: "Não é linguagem de programação?",
         image_adress: Html5
     },
     {

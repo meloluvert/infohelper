@@ -35,32 +35,6 @@ export const tools = [
         ]
     },
     {
-        title: "Ícones",
-        links:[
-            {
-                name:"React Icons",
-                link:"https://react-icons.github.io/react-icons/"
-            },
-            {
-                name: "Flaticon",
-                link:"https://www.flaticon.com/br/"
-            }
-        ]
-    },
-    {
-        title:"IA",
-        links:[
-            {
-                name:"Bard",
-                link:"https://bard.google.com"
-            },
-            {
-                name:"ChatGpt",
-                link:"https://chat.openai.com/"
-            }
-        ]
-    },
-    {
         title: "Design",
         links:[
             {
@@ -84,6 +58,20 @@ export const tools = [
         ]
     },
     {
+        title: "Ícones",
+        links:[
+            {
+                name:"React Icons",
+                link:"https://react-icons.github.io/react-icons/"
+            },
+            {
+                name: "Flaticon",
+                link:"https://www.flaticon.com/br/"
+            }
+        ]
+    },
+
+    {
         title: "Produtividade",
         links:[
             {
@@ -99,5 +87,41 @@ export const tools = [
                 link:"https://cibersistemas.pt/tecnologia/como-escrever-html-css-mais-rapido-com-codigos-de-trapaca-emmet-no-codigo-vs/"
             }
         ]
+    },
+    {
+        title:"IA",
+        links:[
+            {
+                name:"Bard",
+                link:"https://bard.google.com"
+            },
+            {
+                name:"ChatGpt",
+                link:"https://chat.openai.com/"
+            }
+        ]
+    },
+    
+    {
+        title: "Imagens",
+        links:[
+            {
+                name: "Freepik",
+                link:"https://br.freepik.com/"
+
+            },
+            {
+                name: "Pexels",
+                link:"https://www.pexels.com/pt-br/"
+
+            },
+            {
+                name: "Unplash",
+                link:"https://unsplash.com/pt-br"
+
+            },
+        ]
+        
     }
+
 ]

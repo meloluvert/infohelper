@@ -8,5 +8,5 @@ export const Section = styled.section`
     width:80%;
     max-width: 50rem;
     justify-content:space-evenly;
-    height:45rem;
+    height:40rem;
 `

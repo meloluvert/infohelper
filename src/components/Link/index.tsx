@@ -13,11 +13,13 @@ interface LinkProps {
 
 export function Link({ name, link_chrome, link_firefox, link, description }: LinkProps) {
     return (
-        <S.CardLink  title={description} href={link}>
+        <S.CardLink target="_blank" title={description} href={link}>
+            <div>
             <span> {name} </span>
             {link_chrome && <a target="_blank" href={link_chrome}><AiFillChrome color={colors.white} /></a>}
             {link_firefox && <a target="_blank" href={link_firefox}><ImFirefox color={colors.white}/></a>}
             {link && <a target="_blank" href={link}><BsArrowUpRight color={colors.white}/></a>}
+            </div>
         </S.CardLink>
     );
 }

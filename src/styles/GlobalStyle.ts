@@ -1,5 +1,13 @@
 import styled, { createGlobalStyle } from "styled-components"
 
+export const colors = {
+  primary: "#1B1C1E",
+  secondary: "#393A3B",
+  secondaryLight: "#4c4c4c",
+  third: "#78B9EB",
+  black: "#000",
+  white: "#fff"
+}
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -8,15 +16,27 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     box-sizing: border-box;
   }
-  
+  h1,h2,h3,h4{
+    color: ${colors.white};
+  }
+  h1{
+    font-size:3rem;
+    font-family: 'Kanit', sans-serif;
+  }
+  h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    width:100%;
+  }
+  *::selection{
+    background:${colors.third};
+    color:white;
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+  }
+
 `
-export const colors = {
-  primary: "#1B1C1E",
-  secondary: "#393A3B",
-  third: "#78B9EB",
-  black: "#000",
-  white: "#fff"
-}
+
 {/*variáveis*/}
 export const vars = {
   time_hover: "0.5s",

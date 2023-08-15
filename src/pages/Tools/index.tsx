@@ -4,10 +4,12 @@ import * as S from "./styles"
 
 export function Tools() {
     return (
+        <>
+        <h1>Ferramentas</h1>
         <S.DivGlobal>
             {tools.map(section => (
                 <S.Section>
-                    <h3>{section.title}</h3>
+                    <h2>{section.title}</h2>
                     {section.links.map(link => (
                         <ComponentLink
                             key={link.name}
@@ -21,5 +23,6 @@ export function Tools() {
                 </S.Section>
             ))}
         </S.DivGlobal>
+        </>
     );
 }
