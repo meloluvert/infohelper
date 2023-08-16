@@ -49,6 +49,9 @@ div p{
     .social_media svg:hover{
         color:${colors.third};
     }
+    section.who_we_are{
+        flex-direction:row;
+    }
     section.who_we_are div{
         width:80%;
         display:flex;
@@ -58,6 +61,31 @@ div p{
     section.who_we_are div p{
         padding: 0.5rem;
     }
+    @media (max-width: 1600px) {
+        width:90%;
+        
+        
+  }
+  @media (max-width: 1200px){
+    display:flex;
+    flex-direction:column;
+    height: auto;
+    section h2{
+        width:100%;
+        text-align:center;
+
+    }
+    section{
+        margin: 3rem 0;
+    }
+  }
+  @media(max-width: 600px){
+    width:90%;  
+    section.who_we_are div{
+        width: auto;
+    }
+
+  }
 
 `
 export const Form = styled.form`
@@ -130,6 +158,10 @@ export const Form = styled.form`
         color: ${colors.black};
         border-radius: ${vars.border_inputs};
     }
+    @media(max-width: 600px){
+    width:auto; 
+    de 
     
+  }
     
 `

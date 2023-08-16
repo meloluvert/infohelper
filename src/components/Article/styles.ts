@@ -53,5 +53,26 @@ export const Article = styled.article`
     div .card p{
         color: ${colors.secondary} 
     }
+    @media(max-width:800px) {
+        width:35%;
+        height: calc( ${vars.height_card} - 1rem);
+        margin:2rem 0;
+
+        transform: scale(1.01);
+        div .card{
+            height: calc(5rem);
+            bottom: calc(4.9rem - ${vars.height_card} + ${vars.height_card});
+        }
+        div .card p{
+
+            color:${colors.white};
+        }
+        .blur{
+            backdrop-filter:blur(1px);
+            z-index:0;
+        }
+        
+
+    }
     
 `

@@ -19,6 +19,7 @@ export const DivGlobal  = styled.div`
     align-content:space-evenly;
     flex-wrap:wrap;
     width: 90%;
+    
     height:45rem;
     max-width:120rem
 `

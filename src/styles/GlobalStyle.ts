@@ -25,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   h2{
     font-family: 'Noto Sans JP', sans-serif;
-    width:100%;
   }
   *::selection{
     background:${colors.third};

@@ -54,5 +54,11 @@ export const Header = styled.header`
     font-family: monospace;
     font-size:2rem;
   }
+  @media (max-width: 1200px) {
+    nav{
+      display:none;
+    }
+    
+  }
   
 `

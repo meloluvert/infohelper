@@ -9,4 +9,11 @@ export const Section = styled.section`
     max-width: 50rem;
     justify-content:space-evenly;
     height:40rem;
+    @media(max-width:1000px) {
+        width:100%;
+        min-height:100%;
+    }
+    @media(max-width:800px) {
+    height:auto;
+    }
 `
