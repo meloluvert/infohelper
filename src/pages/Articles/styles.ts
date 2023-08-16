@@ -16,4 +16,5 @@ export const Section = styled.section`
     @media(max-width:800px) {
     height:auto;
     }
+    
 `

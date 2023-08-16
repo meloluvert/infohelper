@@ -74,5 +74,12 @@ export const Article = styled.article`
         
 
     }
+    @media(max-width:600px) {
+        width:40%;
+    }
+    @media(max-width:400px) {
+        width:90%;
+        margin:1rem 0;
     
+    }    
 `
