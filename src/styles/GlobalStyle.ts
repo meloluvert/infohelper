@@ -40,5 +40,6 @@ export const GlobalStyle = createGlobalStyle`
 export const vars = {
   time_hover: "0.5s",
   height_card:"15rem",
-  border_inputs: "5px"
+  border_inputs: "5px",
+  header_height: "4rem"
 }

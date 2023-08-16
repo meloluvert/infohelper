@@ -12,6 +12,14 @@ export const Section = styled.section`
         text-align:left;
         width:90%;
     }
+    @media (max-width: 700px){
+        width:70%;
+        height:auto;
+    }
+    @media (max-width: 500px) {
+        width:100%;
+        
+    }
 `
 export const DivGlobal  = styled.div`
     display:flex;
@@ -21,5 +29,10 @@ export const DivGlobal  = styled.div`
     width: 90%;
     
     height:45rem;
-    max-width:120rem
+    max-width:;
+
+    @media (max-width: 700px){
+        height:auto;
+        padding-bottom:2rem;
+    }
 `

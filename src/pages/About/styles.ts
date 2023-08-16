@@ -52,6 +52,9 @@ div p{
     section.who_we_are{
         flex-direction:row;
     }
+    section.who_we_are h2{
+        align-self:flex-end;
+    }
     section.who_we_are div{
         width:80%;
         display:flex;
@@ -73,10 +76,10 @@ div p{
     section h2{
         width:100%;
         text-align:center;
-
+        padding: 1rem 0;
     }
     section{
-        margin: 3rem 0;
+        margin: 1rem 0;
     }
   }
   @media(max-width: 600px){
@@ -84,7 +87,6 @@ div p{
     section.who_we_are div{
         width: auto;
     }
-
   }
 
 `
