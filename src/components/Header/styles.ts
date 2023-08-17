@@ -9,9 +9,11 @@ export const Header = styled.header`
   align-items:center;
   width:100%;
   justify-content:space-evenly;
+  z-index:3;
   nav{
     height:100%;
     width:50%;
+    z-index:4;
   }
   div.logo{
     width:50%;
@@ -45,7 +47,6 @@ export const Header = styled.header`
     background-color: ${colors.secondaryLight};
   }
   nav ul li:hover a{
-    text-decoration:underline;
   }
   nav ul a{
     text-decoration:none;
@@ -64,12 +65,10 @@ export const Header = styled.header`
 
 /*menu vai desaparecer*/
 nav {
-    /* display: none; */
     position:fixed;
     width: 100%;
     justify-content: right;
-    background-color: transparent;
-    z-index:3;
+    z-index:-9;
     height:10rem;
     top:${vars.header_height};
 
@@ -78,8 +77,8 @@ nav {
 
 nav ul {
     flex-wrap: wrap;
-    background-color: ${colors.secondaryLight};
     
+    background-color: #4c4c4cca ;
     height: 100%;
     width: 100%;
 
@@ -91,35 +90,33 @@ nav ul li {
         height: calc(100%/3);
         border-top: 0.1px solid ${colors.secondaryLight};
         display: flex;
-        background-color:rgba(255,255,255,0.1);
+        backdrop-filter:blur(5px);
     }
 
 /*Esconderemos a ul*/
-nav ul {
+.hidden ul {
     position: absolute;
     right: -100%;
     animation: appear;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards;
+     animation-fill-mode: forwards;
     transition: rigth 3s;
     transition-timing-function: ease-in;
 
 }
+.hidden {
+       display:none; 
+        backdrop-filter: blur(5px);
+    }
+  nav{
+    display:block;
+  }
  /*para que a ul, escondida à direita, apareça*/
  @keyframes appear {
         100% {
             right: 0;
         }
     }
-
-
-/*para que a ul, escondida à direita, apareça*/
-@keyframes appear {
-    100% {
-        right: 0;
-    }
-}
-
 
 
 `

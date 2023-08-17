@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { colors, vars } from "../../styles/GlobalStyle"
 
 export const Div = styled.div`
+
+width:13px;
 /* Elelmentos do menu */
     #labelmenu{
         height:20px;
@@ -18,14 +20,11 @@ export const Div = styled.div`
         width:100%;
     }
     input#checkmenu{
-         opacity:0; 
+         display:none;
     }
+    
     /*Animação*/
     /*Quando apertarmos o label, o menu vai aparecer*/
-    input#checkmenu:checked~#menu {
-        display: flex;
-        backdrop-filter: blur(5px);
-    }
 
     /*para que rode quando clicar*/
     input#checkmenu:checked~label .menuburguer {
@@ -55,7 +54,12 @@ export const Div = styled.div`
         display: block;
         content: '';
     }
-
+    @media (min-width:800px) {
+    #labelmenu{
+        display:none;
+    }
+    
+}
 
 
     /* Falta  */
