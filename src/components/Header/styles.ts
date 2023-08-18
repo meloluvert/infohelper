@@ -23,7 +23,7 @@ export const Header = styled.header`
   }
   div.logo img{
     
-    width:50%;
+    height:80%;
     display:block;
     
   }
@@ -96,12 +96,6 @@ nav ul li {
 /*Esconderemos a ul*/
 .hidden ul {
     position: absolute;
-    right: -100%;
-    animation: appear;
-    animation-duration: 1.5s;
-     animation-fill-mode: forwards;
-    transition: rigth 3s;
-    transition-timing-function: ease-in;
 
 }
 .hidden {
@@ -111,12 +105,25 @@ nav ul li {
   nav{
     display:block;
   }
- /*para que a ul, escondida à direita, apareça*/
- @keyframes appear {
-        100% {
-            right: 0;
-        }
+}
+@media(max-width:1500px){
+      nav ul a{
+        font-size:1.2rem;
+      }
+  }
+  @media (max-width: 1000px) {
+    div.logo img{
+      height:auto;
+      width:60%;
     }
-
+  }
+  @media (max-width: 600px){
+    div.logo img{
+      width:100%;
+    }
+    div.logo{
+      width:60%;
+    }
+  }
 
 `
