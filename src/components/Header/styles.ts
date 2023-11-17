@@ -36,7 +36,7 @@ export const Header = styled.header`
     height:100%;
   }
   nav ul li{
-    width: calc(100%/3);
+    width: calc(100%/5);
     text-align:center;
     height:100%;
     transition: background-color ${vars.time_hover};
@@ -55,11 +55,15 @@ export const Header = styled.header`
     width:100%;
     display:inline-block;
     font-family: monospace;
-    font-size:2rem;
+    font-size:1.2rem;
   }
   
 
-
+.ButtonSignOut{
+  width:100%;
+  height:30%;
+  background:none;
+}
 
   @media(max-width:800px) {
 
@@ -87,7 +91,7 @@ nav ul li {
         width: 100%;
         text-align: center;
         display: block;
-        height: calc(100%/3);
+        height: calc(100%/5);
         border-top: 0.1px solid ${colors.secondaryLight};
         display: flex;
         backdrop-filter:blur(5px);

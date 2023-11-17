@@ -162,7 +162,6 @@ export const Form = styled.form`
     }
     @media(max-width: 600px){
     width:auto; 
-    de 
     
   }
     

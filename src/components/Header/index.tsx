@@ -1,9 +1,9 @@
 import * as S from "./styles.ts";
 import logo from "../../assets/InfoHelper.png";
 import { ComponentMenu } from "../index.tsx";
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 
-import { useAuth } from "../../hooks/authHook";
+//import { useAuth } from "../../hooks/authHook";
 import { Link, useNavigate } from "react-router-dom";
 import { GrLogout } from "react-icons/gr";
 import { AuthContext } from "../../contexts/authContext";
@@ -11,7 +11,7 @@ import { AuthContext } from "../../contexts/authContext";
 export function Header() {
   const [isMenuChecked, setMenuChecked] = useState(false);
 
-  const handleMenuCheckboxChange = (isChecked) => {
+  const handleMenuCheckboxChange = (isChecked: boolean | ((prevState: boolean) => boolean)) => {
     setMenuChecked(isChecked);
   };
 //parte adicionada dps
@@ -33,28 +33,30 @@ export function Header() {
                     <li><a href="/artigos">Artigos</a></li> 
                     <li><a href="/ferramentas">Ferramentas</a></li>
                     <li><a href="/sobre">Sobre</a></li>
-                </ul>
                 {
           user ? (
-            <ul>
+            <>
               <li>
                 <Link to="/adm/message">Mensagem</Link>
               </li>
               <li>
-                <button onClick={logout}>{user.name} <GrLogout /></button>
+                <button onClick={logout} className="ButtonSignOut">{user.name} <GrLogout /></button>
               </li>
-            </ul>
+              </>
           ) : (
-            <ul>
+            <>
               <li>
                 <Link to="/login">Login</Link>
               </li>
               <li>
                 <Link to="/cadastrar">Cadastrar</Link>
               </li>
-            </ul>
+
+</>
           )
         }
+
+        </ul>
             </nav>
 
         </S.Header >

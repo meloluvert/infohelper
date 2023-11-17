@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import * as S from "./styles";
 
-export function Menu({ onCheckboxChange }) {
+type CheckboxChangeCallback = (isChecked: boolean) => void;
+
+interface MenuProps {
+  onCheckboxChange: CheckboxChangeCallback;
+}
+
+export function Menu({ onCheckboxChange }: MenuProps) {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {

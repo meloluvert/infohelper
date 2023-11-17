@@ -4,7 +4,7 @@ import { FaKey } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { toast } from "react-toastify";
 
-//import * as S from "./styles";
+import * as S from "./styles";
 import { useAuth } from "../../hooks/authHook";
 import { IErrorResponse, IUser } from "../../interfaces/user.interface";
 import { AxiosError } from "axios";
@@ -36,7 +36,7 @@ export function Login() {
   }
 
   return (
-    <>
+    <S.Section>
       <h1>Login</h1>
       <form method="post" onSubmit={handleSubmit}>
         <label htmlFor="email">E-mail</label>
@@ -57,10 +57,12 @@ export function Login() {
         </div>
         <p>
           Não possui conta? <Link to="/cadastrar">Cadastre-se</Link>
+
+          <br/>
           <button type="submit">Entrar</button>
         </p>
       </form>
-      </>
+      </S.Section>
   );
 };
 

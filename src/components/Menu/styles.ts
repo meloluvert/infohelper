@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { colors, vars } from "../../styles/GlobalStyle"
 
 export const Div = styled.div`
 

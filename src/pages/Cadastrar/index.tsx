@@ -5,7 +5,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { toast } from "react-toastify";
 
-//import * as S from "./styles";
+import * as S from "../Login/styles";
 import { IErrorResponse, IUser } from "../../interfaces/user.interface";
 import { AxiosError } from "axios";
 import { apiUser } from "../../services/data";
@@ -37,7 +37,7 @@ export function Cadastrar() {
     }
   }
   return (
-<>
+<S.Section>
       <h1>Cadastre-se</h1>
       <form method="post" onSubmit={handleSubmit}>
         <label htmlFor="nome">Nome</label>
@@ -69,7 +69,7 @@ export function Cadastrar() {
           <button type="submit">Salvar</button>
         </p>
       </form>
-      </>
+      </S.Section>
   );
 };
 

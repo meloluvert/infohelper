@@ -13,7 +13,6 @@ import { AuthProvider } from "./contexts/authContext";
       <AuthProvider>
         <RouteSoftware/>
       </AuthProvider>
-      <RouteSoftware /> 
     </BrowserRouter>
   )
 }

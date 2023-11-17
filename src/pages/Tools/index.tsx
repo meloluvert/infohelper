@@ -1,8 +1,17 @@
 import { ComponentLink } from "../../components";
 import { tools } from "../../services/tools";
 import * as S from "./styles"
+interface ITool {
+    name: string;
+    link_chrome?: string;
+    link_firefox?: string;
+    link?: string;
+    description?: string;
+}   
 
 export function Tools() {
+    
+    
     return (
         <>
         <h1>Ferramentas</h1>
@@ -10,7 +19,7 @@ export function Tools() {
             {tools.map(section => (
                 <S.Section>
                     <h2>{section.title}</h2>
-                    {section.links.map(link => (
+                    {section.links.map((link : ITool) => (
                         <ComponentLink
                             key={link.name}
                             name={link.name}

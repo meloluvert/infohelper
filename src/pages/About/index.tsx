@@ -32,7 +32,7 @@ export function About() {
                         </div>
                         <div className="mensagem">
                             <label htmlFor="msg"><span>Mensagem</span></label>
-                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                            <textarea name="msg" id="msg" cols={30} rows={10}></textarea>
                         </div>
                         <div className="termos">
                             <input type="checkbox" name="check" id="check" />
